@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACD6FF576EC0868151743453 /* libPods-FileSystemModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DC9581291C3C39CD6C28A6 /* libPods-FileSystemModule.a */; };
+		EF7F14EA1EF118E800E637EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14E91EF118E800E637EB /* main.m */; };
+		EF7F14ED1EF118E800E637EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14EC1EF118E800E637EB /* AppDelegate.m */; };
+		EF7F14F01EF118E800E637EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F14EF1EF118E800E637EB /* ViewController.m */; };
+		EF7F14F31EF118E800E637EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F14F11EF118E800E637EB /* Main.storyboard */; };
+		EF7F14F51EF118E800E637EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7F14F41EF118E800E637EB /* Assets.xcassets */; };
+		EF7F14F81EF118E800E637EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F14F61EF118E800E637EB /* LaunchScreen.storyboard */; };
+		EF7F15031EF1197700E637EB /* FileSystemPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F15021EF1197700E637EB /* FileSystemPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		400D44AD0533AAD5B43536D9 /* Pods-FileSystemModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileSystemModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-FileSystemModule/Pods-FileSystemModule.release.xcconfig"; sourceTree = "<group>"; };
+		B2DC9581291C3C39CD6C28A6 /* libPods-FileSystemModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FileSystemModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7F14E51EF118E800E637EB /* FileSystemModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileSystemModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7F14E91EF118E800E637EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7F14EB1EF118E800E637EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF7F14EC1EF118E800E637EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF7F14EE1EF118E800E637EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF7F14EF1EF118E800E637EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF7F14F21EF118E800E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF7F14F41EF118E800E637EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7F14F71EF118E800E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7F14F91EF118E800E637EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7F15011EF1197700E637EB /* FileSystemPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemPlugin.h; sourceTree = "<group>"; };
+		EF7F15021EF1197700E637EB /* FileSystemPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemPlugin.m; sourceTree = "<group>"; };
+		FADAC8332DCFD2A97D29CF49 /* Pods-FileSystemModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileSystemModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileSystemModule/Pods-FileSystemModule.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7F14E21EF118E800E637EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD6FF576EC0868151743453 /* libPods-FileSystemModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B88B7834A9357D86C85A91A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC9581291C3C39CD6C28A6 /* libPods-FileSystemModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9F6DD983DCA64DAC25510FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FADAC8332DCFD2A97D29CF49 /* Pods-FileSystemModule.debug.xcconfig */,
+				400D44AD0533AAD5B43536D9 /* Pods-FileSystemModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF7F14DC1EF118E800E637EB = {
+			isa = PBXGroup;
+			children = (
+				EF7F14FF1EF1196700E637EB /* Shared */,
+				EF7F14E71EF118E800E637EB /* FileSystemModule */,
+				EF7F14E61EF118E800E637EB /* Products */,
+				C9F6DD983DCA64DAC25510FB /* Pods */,
+				B88B7834A9357D86C85A91A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7F14E61EF118E800E637EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14E51EF118E800E637EB /* FileSystemModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7F14E71EF118E800E637EB /* FileSystemModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14EB1EF118E800E637EB /* AppDelegate.h */,
+				EF7F14EC1EF118E800E637EB /* AppDelegate.m */,
+				EF7F14EE1EF118E800E637EB /* ViewController.h */,
+				EF7F14EF1EF118E800E637EB /* ViewController.m */,
+				EF7F14F11EF118E800E637EB /* Main.storyboard */,
+				EF7F14F41EF118E800E637EB /* Assets.xcassets */,
+				EF7F14F61EF118E800E637EB /* LaunchScreen.storyboard */,
+				EF7F14F91EF118E800E637EB /* Info.plist */,
+				EF7F14E81EF118E800E637EB /* Supporting Files */,
+			);
+			path = FileSystemModule;
+			sourceTree = "<group>";
+		};
+		EF7F14E81EF118E800E637EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F14E91EF118E800E637EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7F14FF1EF1196700E637EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15001EF1196700E637EB /* Plugin */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EF7F15001EF1196700E637EB /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15011EF1197700E637EB /* FileSystemPlugin.h */,
+				EF7F15021EF1197700E637EB /* FileSystemPlugin.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7F14E41EF118E800E637EB /* FileSystemModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7F14FC1EF118E800E637EB /* Build configuration list for PBXNativeTarget "FileSystemModule" */;
+			buildPhases = (
+				D27F01BB18158D56B016FA4D /* [CP] Check Pods Manifest.lock */,
+				EF7F14E11EF118E800E637EB /* Sources */,
+				EF7F14E21EF118E800E637EB /* Frameworks */,
+				EF7F14E31EF118E800E637EB /* Resources */,
+				096C9C4F9C464A884EDF335D /* [CP] Embed Pods Frameworks */,
+				A26337AE243CCFE76C186C39 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileSystemModule;
+			productName = FileSystemModule;
+			productReference = EF7F14E51EF118E800E637EB /* FileSystemModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7F14DD1EF118E800E637EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = t5online;
+				TargetAttributes = {
+					EF7F14E41EF118E800E637EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF7F14E01EF118E800E637EB /* Build configuration list for PBXProject "FileSystemModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7F14DC1EF118E800E637EB;
+			productRefGroup = EF7F14E61EF118E800E637EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7F14E41EF118E800E637EB /* FileSystemModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7F14E31EF118E800E637EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F14F81EF118E800E637EB /* LaunchScreen.storyboard in Resources */,
+				EF7F14F51EF118E800E637EB /* Assets.xcassets in Resources */,
+				EF7F14F31EF118E800E637EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096C9C4F9C464A884EDF335D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FileSystemModule/Pods-FileSystemModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26337AE243CCFE76C186C39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FileSystemModule/Pods-FileSystemModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27F01BB18158D56B016FA4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7F14E11EF118E800E637EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F14F01EF118E800E637EB /* ViewController.m in Sources */,
+				EF7F15031EF1197700E637EB /* FileSystemPlugin.m in Sources */,
+				EF7F14ED1EF118E800E637EB /* AppDelegate.m in Sources */,
+				EF7F14EA1EF118E800E637EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF7F14F11EF118E800E637EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F14F21EF118E800E637EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7F14F61EF118E800E637EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F14F71EF118E800E637EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF7F14FA1EF118E800E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7F14FB1EF118E800E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7F14FD1EF118E800E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADAC8332DCFD2A97D29CF49 /* Pods-FileSystemModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FileSystemModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.FileSystemModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF7F14FE1EF118E800E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400D44AD0533AAD5B43536D9 /* Pods-FileSystemModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FileSystemModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.FileSystemModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7F14E01EF118E800E637EB /* Build configuration list for PBXProject "FileSystemModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F14FA1EF118E800E637EB /* Debug */,
+				EF7F14FB1EF118E800E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7F14FC1EF118E800E637EB /* Build configuration list for PBXNativeTarget "FileSystemModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F14FD1EF118E800E637EB /* Debug */,
+				EF7F14FE1EF118E800E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7F14DD1EF118E800E637EB /* Project object */;
+}
