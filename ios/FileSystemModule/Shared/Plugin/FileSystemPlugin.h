@@ -13,4 +13,6 @@
 
 @interface FileSystemPlugin : NBPlugin
 
+- (void)selectFile:(float)quality width:(float)Width height:(float)height;
+
 @end
