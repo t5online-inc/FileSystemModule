@@ -1,4 +1,4 @@
-package com.t5online.nebulacore.plugin.filesystem;
+package shared.plugin;
 
 import android.app.Activity;
 import android.content.ContentUris;
