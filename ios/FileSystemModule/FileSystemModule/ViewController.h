@@ -6,9 +6,9 @@
 //  Copyright © 2017년 t5online. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <NebulaCore/NBWebViewController.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : NBWebViewController
 
 
 @end

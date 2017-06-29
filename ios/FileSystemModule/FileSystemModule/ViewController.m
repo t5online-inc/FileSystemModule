@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString* url = @"http://www.t5online.com:9080/nebula/test/screenshot.html";
+    NSURLRequest* request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    [[self webView] loadRequest:request];
 }
 
 

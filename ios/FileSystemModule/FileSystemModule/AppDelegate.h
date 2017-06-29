@@ -6,11 +6,9 @@
 //  Copyright © 2017년 t5online. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <NebulaCore/NBAppDelegate.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : NBAppDelegate
 
 
 @end
