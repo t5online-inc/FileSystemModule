@@ -22,33 +22,56 @@ import org.json.JSONObject;
  */
 
 public class FileSystemPlugin extends Plugin {
-    public void selectFile (float quality, float width, float height){
-        final NebulaActivity activity = (NebulaActivity)this.bridgeContainer.getActivity();
-        activity.addActivityResultHandler(PICK_PHOTO_FOR_AVATAR, new NebulaActivity.ActivityResultHandler() {
-            @Override
-            public void onActivityResult(int resultCode, Intent data) {
-                if (resultCode == Activity.RESULT_OK) {
-                    String filePath = uriToFilePath(activity, data.getData());
-                    if (filePath != null) {
-                        JSONObject ret = new JSONObject();
-                        try {
-                            ret.put("filePath", filePath);
+
+    public static final String PLUGIN_GROUP_FILESYSTEM = "filesystem";
+
+    public void selectFile (float quality, float width, float height) {
+        try {
+            if (bridgeContainer.getSync()) {
+                JSONObject ret = new JSONObject();
+                ret.put("code", STATUS_CODE_ERROR);
+                ret.put("message", "unsupported sync plugin");
+                resolve(ret);
+                return;
+            }
+            final NebulaActivity activity = (NebulaActivity) this.bridgeContainer.getActivity();
+            activity.addActivityResultHandler(PICK_PHOTO_FOR_AVATAR, new NebulaActivity.ActivityResultHandler() {
+                @Override
+                public void onActivityResult(int resultCode, Intent data) {
+                    try {
+                        if (resultCode == Activity.RESULT_OK) {
+                            String filePath = uriToFilePath(activity, data.getData());
+                            if (filePath != null) {
+                                JSONObject ret = new JSONObject();
+                                ret.put("code", STATUS_CODE_SUCCESS);
+                                ret.put("message", filePath);
+                                resolve(ret);
+                            } else {
+                                JSONObject ret = new JSONObject();
+                                ret.put("code", STATUS_CODE_ERROR);
+                                ret.put("message", "선택한 파일의 경로를 얻을 수 없습니다");
+                                resolve(ret);
+                            }
+                        } else {
+                            JSONObject ret = new JSONObject();
+                            ret.put("code", STATUS_CODE_ERROR);
+                            ret.put("message", "파일을 선택하지 않았습니다");
                             resolve(ret);
-                        }catch (Exception e){
+                        }
+                        activity.removeActivityResultHandler(PICK_PHOTO_FOR_AVATAR);
+                    }catch (Exception e) {
                             e.getStackTrace();
                             reject();
-                        }
-                    } else {
-                        reject("E00005", "선택한 파일의 경로를 얻을 수 없습니다", "");
                     }
-                } else {
-                    reject("E00006", "파일을 선택하지 않았습니다", "");
                 }
-                activity.removeActivityResultHandler(PICK_PHOTO_FOR_AVATAR);
-            }
-        });
-        pickImage(activity);
+            });
+            pickImage(activity);
+        } catch (Exception e) {
+            e.getStackTrace();
+            reject();
+        }
     }
+
 
     private static final int PICK_PHOTO_FOR_AVATAR = 1;
     public void pickImage(Activity context) {
