@@ -65,10 +65,10 @@
     BOOL isSync = [self.bridgeContainer isSync];
     
     if (isSync) {
-        NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                                 @(STATUS_CODE_ERROR) , @"code",
-                                 @"unsupported synchronous" , @"message",
-                                 nil];
+        NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+        [retData setObject:@(STATUS_CODE_ERROR) forKey:@"code"];
+        [retData setObject:@"unsupported synchronous" forKey:@"message"];
+        
         [self resolve:retData];
     } else {
         _iQuality = [quality floatValue];
@@ -88,20 +88,17 @@
 #pragma mark - ImagePickerControllerDelegate Methods
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    NSDictionary* retData = nil;
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
     NSString *filePath = [self saveToLocalSendbox:picker withInfo:info];
     
     if(filePath !=nil && filePath.length > 0){
-        retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                   @(STATUS_CODE_SUCCESS) , @"code",
-                   filePath , @"message",
-                   nil];
+        [retData setObject:@(STATUS_CODE_SUCCESS) forKey:@"code"];
+        [retData setObject:filePath forKey:@"message"];
     }else{
-        retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                   @(STATUS_CODE_ERROR) , @"code",
-                   @"" , @"message",
-                   nil];
+        [retData setObject:@(STATUS_CODE_ERROR) forKey:@"code"];
+        [retData setObject:@"not found file path" forKey:@"message"];
     }
+    
     [self resolve:retData];
     
     [_imagePickerController dismissViewControllerAnimated:YES completion:NULL];
