@@ -1,5 +1,5 @@
 PODS:
-  - NebulaCore2 (2.0.0)
+  - NebulaCore2 (2.0.2)
 
 DEPENDENCIES:
   - NebulaCore2 (from `https://www.t5online.com:8002/t5-frameworks/nebula.git`)
@@ -10,12 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NebulaCore2:
-    :commit: 85956830172c0ddd1c7d187bb6a84fa1a6a93f5c
+    :commit: a0d21e72efbef8ec3e9a1ff057d8d928ebc89183
     :git: https://www.t5online.com:8002/t5-frameworks/nebula.git
 
 SPEC CHECKSUMS:
-  NebulaCore2: ca22129f73c7df4ae7a38341f08eac0cf95d1f2f
+  NebulaCore2: 65218d7ce3198eaa369bbb08d28df13369dd8a58
 
 PODFILE CHECKSUM: 414f930958c47f59a4a5ccd236cd11efb3f88763
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
